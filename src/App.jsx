@@ -1,6 +1,8 @@
 // import { useState } from 'react'
 import User from './Header.jsx'
 import './App.css'
+import Name, {Profile, Setting, Sign} from './UserComponent.jsx'
+
 
 function App() {
   return (
@@ -8,6 +10,10 @@ function App() {
       <h1>first Component</h1>
       <City/>
       <Profession/>
+      <Name/>
+      <Profile/>
+      <Setting/>
+      <h1>{Sign}</h1>
     </div>
   )
 }
