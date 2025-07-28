@@ -1,17 +1,28 @@
 // import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import User from './Header.jsx'
 import './App.css'
 
-function App(){
-  return ( 
+function App() {
+  return (
     <div>
-      <User/>
-    <h1>Hello world, how are you</h1>
-    <h1>Dinehs kumar</h1>
+      <h1>first Component</h1>
+      <City/>
+      <Profession/>
     </div>
   )
 }
 
+function City() {
+  return (
+    <h2>Bengaluru</h2>
+  )
+}
+
+function Profession() {
+  return (
+    <h3>
+      Software Engineer
+    </h3>
+  )
+}
 export default App
