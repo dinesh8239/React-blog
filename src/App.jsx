@@ -5,6 +5,9 @@ import Name, {Profile, Setting, Sign} from './UserComponent.jsx'
 
 
 function App() {
+  const userName = "John Snow"
+  const a = 20;
+  const b = 50;
   return (
     <div>
       <h1>first Component</h1>
@@ -14,6 +17,9 @@ function App() {
       <Profile/>
       <Setting/>
       <h1>{Sign}</h1>
+      <h1>{userName}</h1>
+      <h2>{a+b}</h2>
+      {10+20+30}
     </div>
   )
 }
