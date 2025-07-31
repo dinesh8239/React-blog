@@ -1,34 +1,29 @@
-// import { useState } from 'react'
-import User from './Header.jsx'
-import './App.css'
-import Name, { Profile, Setting, Sign } from './UserComponent.jsx'
-
-
 function App() {
-  const userName = "Anil Sidhu Todos"
-  const a = 20;
-  const b = 50;
+  const name = "Dinesh Kumar"
+  const a = 10;
+  let b = 15;
+  const user = { name: 'Anil', age: 23, email: 'dkkumar97855@gmail.com' }
+  const marvel = ['IronMan', 'Thor', 'Captain America', 'Hulk']
+  function DC(a, b) {
+    return a / b
+  }
+  const path = "https://images.pexels.com/photos/16920103/pexels-photo-16920103.jpeg?cs=srgb&dl=pexels-gy1610-16920103.jpg&fm=jpg"
   return (
-    <div className="container">
-      <h1>{userName}</h1>
-      <img 
-             src="https://images.unsplash.com/25/puppy-love.jpg?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBwdXBweXxlbnwwfHwwfHx8MA%3D%3D"
-        alt="dog image"
-        className="photo"
-      />
-      <ul>
-        <li><b>Invent new traffic lights</b></li>
-        <li><b>Rehearse a movie scene</b></li>
-        <li><b>Improve the spectrum technology</b></li>
-      </ul>
-      <button onClick={callFun}>Click Me</button>
+    <div>
+      <h1>{name}</h1>
+      <h1>{a + b}</h1>
+      <h1>{user.email}</h1>
+      <h1>{marvel[2]}</h1>
+      <h1>{DC(100, 20)}</h1>
+      <img style={{
+        maxWidth: "300px",
+        borderRadius: "10px",
+        display: "block",
+        marginLeft: "0"
+      }} src={path} alt="Black Dog" />
+
     </div>
   )
 }
 
-function callFun() {
-  alert("function called")
-}
-
-
-export default App
+export default App;
